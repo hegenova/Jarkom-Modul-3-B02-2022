@@ -67,14 +67,14 @@ iface eth0 inet dhcp
 ```
 
 Kemudian pada ostania melakukan seperti berikut:
-<gambar 1.2>
+![Alt text](/image/no1.2.png)
 Dimana nanti yang bagian No 2 (dari baris 8) akan di edit konfigurasinya pada /etc/default/isc-dhcp-relay .
 
 ## 2. No 3-4
 Semua client yang ada harus menggunakan konfigurasi IP dari DHCP server. Client melalui Switch 1 mendapatkan range IP dari 10.4.1.50 – 10.4.1.88 dan 10.4.1.120 – 10.4.1.155 
 
 Pada westalis dimasukan script sebagai berikut :
-<gambar 2>
+![Alt text](/image/no2.png)
 - Seperti biasa kita lakukan konfigurasi pada westalis terlebih dahulu (pada baris 21-23)
 - Untuk soal no 3, diminta untuk melakukan set IP (baris 33-43)
 - Untuk soal no 4, client melalui switch 3 mendapatkan range IP 10.4.3.10 - 10.4.3.30 dan 10.4.3.60 - 10.4.3.85 (baris 45-52) lalu semua nya disimpan di /etc/dhcp/dhcpd.conf
@@ -113,14 +113,14 @@ Kemudian pada WISE kita melakukan konfigurasi sebagai berikut
 Lama waktu DHCP server meminjamkan alamat IP kepada Client yang melalui Switch1 selama 5 menit sedangkan pada client yang melalui Switch3 selama 10 menit. Dengan waktu maksimal yang dialokasikan untuk peminjaman alamat IP selama 115 menit.
 
 Pada Westalis dilakukan script sebagai berikut
-<gambar 4>
+![Alt text](/image/no4.png)
 ## 5. no 7
 Loid dan Franky berencana menjadikan Eden sebagai server untuk pertukaran informasi dengan alamat IP yang tetap dengan IP 192.172.3.13
 
 Menambahkan konfigurasi berikut pada Westalis
-<gambar 5>
+![Alt text](/image/no5.png)
 Dan pada interface WISE sebagau berikut
-<gambar 5.2>
+![Alt text](/image/no5.2.png)
 
 ## Proxy Server
 Pada Proxy Server di Berlint, Loid berencana untuk mengatur bagaimana Client dapat mengakses internet. Artinya setiap client harus menggunakan Berlint sebagai HTTP & HTTPS proxy. Adapun kriteria pengaturannya adalah sebagai berikut:
@@ -132,8 +132,8 @@ Pada Proxy Server di Berlint, Loid berencana untuk mengatur bagaimana Client dap
 5. Setelah diterapkan, ternyata peraturan nomor (4) mengganggu produktifitas saat hari kerja, dengan demikian pembatasan kecepatan hanya diberlakukan untuk pengaksesan internet pada hari libur
 
 Untuk memenuhi kriteria kriteria diatas dilakukan konfigurasi sebagai berikut: Pada Berlint
-<gambar 6>
+![Alt text](/image/no6.png)
 Setelah dilakukan konfigurasi diatas dilakukan restart pada squid dengan service squid restart pada WISE
-<gambar 6.2>
+![Alt text](/image/no6.2.png)
 Setelah dilakukan konfigurasi diatas dilakukan restart pada bind dengan 
 ```service bind9 restart```
