@@ -9,7 +9,7 @@ Maisan Auliya (5025201137)
 Loid bersama Franky berencana membuat peta tersebut dengan kriteria WISE sebagai DNS Server, Westalis sebagai DHCP Server, Berlint sebagai Proxy Server (1), dan Ostania sebagai DHCP Relay (2).
 
 Kelompok kami membuat topologi sebagai berikut :
-![Alt text](/img/no 1.png)
+![Alt text](/img/[no 1].png)
 
 
 Lalu melakukan network configuration pada masing-masing node
