@@ -115,7 +115,7 @@ Lama waktu DHCP server meminjamkan alamat IP kepada Client yang melalui Switch1 
 Pada Westalis dilakukan script sebagai berikut
 ![Alt text](/image/no4.png)
 ## 5. no 7
-Loid dan Franky berencana menjadikan Eden sebagai server untuk pertukaran informasi dengan alamat IP yang tetap dengan IP 192.172.3.13
+Loid dan Franky berencana menjadikan Eden sebagai server untuk pertukaran informasi dengan alamat IP yang tetap dengan IP 10.4.3.13
 
 Menambahkan konfigurasi berikut pada Westalis
 ![Alt text](/image/no5.png)
